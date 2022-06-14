@@ -41,7 +41,7 @@ const createRecord = () => {
 			if (err) {
 				console.error(err)
 				let item = {
-					Time: time,
+					Time: dayjs().format('lll'),
 					Rates: btc
 				}
 				array.push(item)
